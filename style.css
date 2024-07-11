@@ -1,0 +1,109 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: rgb(48, 255, 255);
+    height: 80px;
+    align-items: center;
+}
+
+.menuItems {
+    display: flex;
+    margin-right: 35px;
+}
+
+.boody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+a {
+    margin: 0px 25px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    text-decoration: dotted;
+}
+
+.banner {
+    height: 500px;
+    background-image: url(banner.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.box {
+    width: 450px;
+    height: 700px;
+    margin: 20px 5px;
+    border-radius: 50px;
+    border: 2px dashed black;
+    text-align: center;
+    overflow: hidden;
+
+
+}
+
+.burgerPng {
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.box h1,
+.box h2 {
+    color: rgb(221, 33, 0);
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(35, 243, 8);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aqua;
+    padding: 20px;
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMenu a {
+    margin: 10px;
+}
+
+footer img {
+    width: 300px;
+    height: 150px;
+}
+@media screen  and (max-width:500px){
+    .box{
+        margin: 25px;
+    }
+    footer{
+        flex-direction: column;
+        
+    }
+}
