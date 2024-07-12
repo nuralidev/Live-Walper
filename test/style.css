@@ -12,3 +12,8 @@ body{
     font-size: 200px;
     color: rgb(161, 161, 161);
 }
+@media only screen and (max-width: 600px) {
+    .new{
+      font-size: 40px;
+    }
+  }
