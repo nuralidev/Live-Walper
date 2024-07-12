@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.new{
+    font-family: "Inconsolata", monospace;
+    position: relative;
+    font-size: 200px;
+    color: rgb(161, 161, 161);
+}
