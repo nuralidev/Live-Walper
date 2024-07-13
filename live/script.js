@@ -23,7 +23,6 @@ const trick = () => {
    <span class="new" >${saniye}</span>
    `
     clock.innerHTML = html
-    console.log(saniye)
 }
 
 setInterval(trick, 1000)
