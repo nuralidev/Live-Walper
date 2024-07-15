@@ -1,5 +1,5 @@
 const clock = document.querySelector(".clock")
-
+const title=document.querySelector("title")
 const trick = () => {
     const newDate = new Date()
     let saat = newDate.getHours()
@@ -22,7 +22,10 @@ const trick = () => {
    <span class="new" >${deqiqe}:</span>
    <span class="new" >${saniye}</span>
    `
+
     clock.innerHTML = html
+    const div=document.querySelector("div").textContent
+    title.textContent=`${saat}:${deqiqe}:${saniye}`
 }
 setInterval(trick, 1000)
 document.addEventListener("DOMContentLoaded", () => {
