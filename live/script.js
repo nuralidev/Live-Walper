@@ -24,5 +24,17 @@ const trick = () => {
    `
     clock.innerHTML = html
 }
-
 setInterval(trick, 1000)
+document.addEventListener("DOMContentLoaded", () => {
+    function fetchIpInfo() {
+      fetch('https://ipinfo.io/json?token=e07621bb9aebfc')
+        .then(response => response.json())
+        .then(data => {
+          console.log('IP Adresiniz:', data.ip);
+          console.log('Unvan:', data.city + ', ' + data.region + ', ' + data.country);
+          console.log('Təxmini Ünvan:', data.loc);
+        })
+        .catch(error => console.error('Diqqet Xeta:', error));
+    } 
+    fetchIpInfo()
+    })
